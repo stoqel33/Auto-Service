@@ -1,0 +1,12 @@
+.grid{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 30vw auto 30vw;
+  grid-template-rows: 10vh 30vh 25vh 1fr auto;
+  grid-template-areas:
+  'logo logo phone'
+  'baner baner baner'
+  'service service service'
+  'info info info'
+  'footer footer footer';
+}

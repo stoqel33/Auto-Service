@@ -1,0 +1,8 @@
+.phone{
+  grid-area: phone;
+  text-align: center;
+  align-self: center;
+  &__number{
+    font-size: 1.8rem;
+  }
+}

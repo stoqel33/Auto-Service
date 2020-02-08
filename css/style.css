@@ -1,7 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900&display=swap&subset=latin-ext");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #f6c90e;
+  background-color: #151314;
+}
+
+.grid {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw auto 30vw;
+      grid-template-columns: 30vw auto 30vw;
+  -ms-grid-rows: 10vh 30vh 25vh 1fr auto;
+      grid-template-rows: 10vh 30vh 25vh 1fr auto;
+      grid-template-areas: 'logo logo phone' 'baner baner baner' 'service service service' 'info info info' 'footer footer footer';
+}
+
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: logo;
+  margin-left: 20%;
+  padding: 1rem 1rem;
+  font-size: 4rem;
+}
+
+.phone {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: phone;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.phone__number {
+  font-size: 1.8rem;
+}
+
+.banner {
+  font-size: 2rem;
+}
+
+.services {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: service;
+}
+
+.info {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: info;
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */
