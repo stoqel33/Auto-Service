@@ -10,7 +10,12 @@
     position: absolute;
     top: 12%;
     left: 65%;
-    text-shadow: 0 0 8px black;
+    text-shadow: 0 0 4px black;
+    opacity: 0;
+
+    &.title-active{
+      opacity: 1;
+    }
   }
 
   &__text{
@@ -20,6 +25,11 @@
     left: 65%;
     text-shadow: 0 0 8px black;
     text-align: center;
+    opacity: 0;
+
+    &.text-active{
+      opacity: 1;
+    }
   }
 
   &__dots{
