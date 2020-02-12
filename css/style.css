@@ -48,8 +48,13 @@
       align-self: center;
 }
 
-.phone__number {
+.phone__title {
   font-size: 1.8rem;
+}
+
+.phone__number {
+  text-decoration: none;
+  color: #f6c90e;
 }
 
 .slider {
@@ -164,7 +169,7 @@
 }
 
 .slider__dot.active {
-  background-color: yellowgreen;
+  background-color: #f6c90e;
   scale: 1.3;
 }
 
@@ -282,21 +287,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .info__contact-section.title {
   margin-top: .5rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 30%;
 }
 
 .info__contact-section.description {
   margin-top: .5rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 30%;
   -webkit-box-align: end;
       -ms-flex-align: end;

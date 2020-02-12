@@ -2,7 +2,12 @@
   grid-area: phone;
   text-align: center;
   align-self: center;
-  &__number{
+  &__title{
     font-size: 1.8rem;
+  }
+
+  &__number{
+    text-decoration: none;
+    color: $font-color;
   }
 }
