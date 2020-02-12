@@ -1,6 +1,12 @@
 .logo{
   grid-area: logo;
-  margin-left: 20%;
-  padding: 1rem 1rem;
-  font-size: 4rem;
+  position: relative;
+
+  &__name{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+  }
 }
