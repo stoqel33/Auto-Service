@@ -14,8 +14,8 @@
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30vw 40vw 30vw;
-      grid-template-columns: 30vw 40vw 30vw;
+  -ms-grid-columns: 30% 40% 30%;
+      grid-template-columns: 30% 40% 30%;
   -ms-grid-rows: 10vh 40vh 25vh 1fr auto;
       grid-template-rows: 10vh 40vh 25vh 1fr auto;
       grid-template-areas: 'logo logo phone' 'baner baner baner' 'service service service' 'info info info' 'footer footer footer';
@@ -26,8 +26,15 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: logo;
-  margin-left: 20%;
-  padding: 1rem 1rem;
+  position: relative;
+}
+
+.logo__name {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 4rem;
 }
 
@@ -52,7 +59,7 @@
   grid-area: baner;
   position: relative;
   min-height: 40vh;
-  width: 100%;
+  max-width: 100%;
 }
 
 .slider__article {
@@ -222,6 +229,72 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.info__section {
+  max-width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info__title {
+  margin-bottom: 1rem;
+}
+
+.info div {
+  height: 100%;
+  width: 100%;
+}
+
+.info__text {
+  text-align: justify;
+}
+
+.info__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info__contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.info__contact-title {
+  margin-left: 5%;
+}
+
+.info__contact-description {
+  margin-left: 5%;
 }
 
 .footer {

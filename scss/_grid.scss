@@ -4,7 +4,7 @@
   cursor: default;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 30vw 40vw 30vw;
+  grid-template-columns: 30% 40% 30%;
   grid-template-rows: 10vh 40vh 25vh 1fr auto;
   grid-template-areas:
   'logo logo phone'
