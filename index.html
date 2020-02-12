@@ -16,28 +16,38 @@
       <h1 class="phone__number">Tel. kontaktowy: 000-000-000</h1>
     </div>
     <header class="slider">
-      <h2 class="slider__title title-active">OFERTA</h2>
-      <h2 class="slider__text text-active">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
-        veritatis
-        libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia commodi
-        excepturi quam error!</h2>
 
-      <h2 class="slider__title">OFERTA2</h2>
-      <h2 class="slider__text">2Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae molestias veritatis odio
-        placeat optio
-        voluptatibus nesciunt obcaecati dicta harum. Facere quibusdam porro tenetur eaque quasi earum reprehenderit
-        adipisci repudiandae quia?</h2>
-      <h2 class="slider__title">OFERTA3</h2>
-      <h2 class="slider__text">3Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae molestias veritatis odio
-        placeat optio
-        voluptatibus nesciunt obcaecati dicta harum. Facere quibusdam porro tenetur eaque quasi earum reprehenderit
-        adipisci repudiandae quia?</h2>
-      <button class="btn-prev btn">&#10094;</button>
-      <button class="btn-next btn">&#10095;</button>
+      <article class="slider__article active slider__article-first">
+        <h2 class="slider__title ">OFERTA</h2>
+        <h2 class="slider__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
+          veritatis
+          libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia commodi
+          excepturi quam error!</h2>
+      </article>
+
+      <article class="slider__article slider__article-second ">
+        <h2 class="slider__title ">OFERTA2</h2>
+        <h2 class="slider__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
+          veritatis
+          libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia commodi
+          excepturi quam error!</h2>
+      </article>
+
+      <article class="slider__article slider__article-third">
+        <h2 class="slider__title ">OFERTA3</h2>
+        <h2 class="slider__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
+          veritatis
+          libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia commodi
+          excepturi quam error!</h2>
+      </article>
+
+      <button class="slider__btn slider__btn-prev">&#10094;</button>
+      <button class="slider__btn slider__btn-next">&#10095;</button>
+
       <div class="slider__dots">
-        <span class="slider__dot dot-active"></span>
-        <span class="slider__dot"></span>
-        <span class="slider__dot"></span>
+        <span class="slider__dot active" onclick="changeSlider(0)"></span>
+        <span class="slider__dot" onclick="changeSlider(1)"></span>
+        <span class="slider__dot" onclick="changeSlider(2)"></span>
       </div>
     </header>
     <article class="services">123</article>
