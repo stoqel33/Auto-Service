@@ -27,21 +27,30 @@
 
   &__contact{
     display: flex;
-    flex-direction: column;
-
+    
     &-section{
+      width: 100%;
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-top: 2%;
+      flex-direction: column;
+      
+      &.title{
+        margin-top: .5rem;
+        justify-content: space-between;
+        width: 30%;
+      }
+      
+      &.description{
+        margin-top: .5rem;
+        justify-content: space-between;
+        width: 30%;
+        align-items: flex-end;
+      }
     }
-
+    
     &-title{
-      margin-left: 5%;
     }
 
     &-description{
-      margin-left: 5%;
     }
   }
 
