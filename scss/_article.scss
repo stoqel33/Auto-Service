@@ -1,3 +1,22 @@
 .services{
   grid-area: service;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: space-evenly;
+  flex-basis: 100%;
+
+  &__section{
+    display: flex;
+    max-width: 25%;
+
+  }
+  &__img{
+  }
+
+  &__text{
+    padding-left: 2rem;
+    align-self: center;
+    text-align: justify;
+  }
 }
