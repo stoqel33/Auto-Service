@@ -22,6 +22,7 @@
     }
     
     &-first{
+      background-position-y: 70%;
       background-image: url(/images/key1.jpg);
       & .slider__title{
         top: 20%;
@@ -35,7 +36,7 @@
     }
 
     &-second{
-      background-image: url(/images/image0.jpg);
+      background-image: url(/images/image3.jpg);
 
       & .slider__title{
         top: 20%;
@@ -49,7 +50,8 @@
     }
 
     &-third{
-      background-image: url(/images/image2.jpg);
+      background-position-y: 90%;
+      background-image: url(/images/image4.jpg);
 
       & .slider__title{
         top: 20%;
