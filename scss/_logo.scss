@@ -1,12 +1,20 @@
 .logo{
   grid-area: logo;
   position: relative;
+  color: $logo-color;
 
   &__name{
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 20%;
-    transform: translateY(-50%);
     font-size: 4rem;
+  }
+
+  &__subtitle{
+    color: #eeeeee;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
   }
 }
