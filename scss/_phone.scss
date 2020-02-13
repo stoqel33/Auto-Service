@@ -1,13 +1,22 @@
 .phone{
   grid-area: phone;
-  text-align: center;
-  align-self: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
   &__title{
-    font-size: 1.8rem;
+    position: relative;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+
+    & i{
+      color: $icon-color;
+      font-size: 2.5rem;
+    }
   }
 
   &__number{
     text-decoration: none;
-    color: $font-color;
+    color: $phone-color;
   }
 }
