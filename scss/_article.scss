@@ -1,8 +1,6 @@
 .services{
   grid-area: service;
   display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   justify-content: space-evenly;
   flex-basis: 100%;
 
@@ -10,6 +8,12 @@
     display: flex;
     max-width: 25%;
 
+  }
+
+  & i{
+    color: $icon-color;
+    font-size: 5rem;
+    align-self: center;
   }
   &__img{
   }

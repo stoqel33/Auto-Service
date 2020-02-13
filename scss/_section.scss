@@ -13,6 +13,7 @@
   }
 
   &__title{
+    color: $title-color;
     margin-bottom: 1rem;
   }
 
@@ -35,6 +36,7 @@
       justify-content: space-evenly;
       
       &.title{
+        color: $titleInfo-color;
         margin-top: .5rem;
         width: 30%;
       }

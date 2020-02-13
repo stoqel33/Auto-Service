@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Auto-Service</title>
+  <script src="https://kit.fontawesome.com/5d0140c751.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,54 +16,62 @@
 
     <div class="logo">
       <h1 class="logo__name">Auto-serwis</h1>
+      <h3 class="logo__subtitle">Tomasz Rajca</h3>
     </div>
 
     <div class="phone">
-      <h1 class="phone__title">Tel. kontaktowy:
+      <h1 class="phone__title">
         <a class="phone__number" href="tel:123-123-123">123-123-123</a>
+        <i class="fas fa-phone"></i>
       </h1>
     </div>
 
     <header class="slider">
 
-      <article class="slider__article active slider__article-first">
-        <h2 class="slider__title ">Tytuł</h2>
-        <h2 class="slider__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
-          veritatis
-          libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia commodi
-          excepturi quam error!</h2>
-      </article>
+      <div class="wrapper">
+        <article class="slider__article active slider__article-first">
+          <h2 class="slider__title ">Tytuł</h2>
+          <h2 class="slider__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
+            veritatis
+            libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia
+            commodi
+            excepturi quam error!</h2>
+        </article>
 
-      <article class="slider__article slider__article-second ">
-        <h2 class="slider__title ">2Tytuł</h2>
-        <h2 class="slider__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
-          veritatis
-          libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia commodi
-          excepturi quam error!</h2>
-      </article>
+        <article class="slider__article slider__article-second ">
+          <h2 class="slider__title ">2Tytuł</h2>
+          <h2 class="slider__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
+            veritatis
+            libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia
+            commodi
+            excepturi quam error!</h2>
+        </article>
 
-      <article class="slider__article slider__article-third">
-        <h2 class="slider__title ">3Tytuł</h2>
-        <h2 class="slider__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
-          veritatis
-          libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia commodi
-          excepturi quam error!</h2>
-      </article>
+        <article class="slider__article slider__article-third">
+          <h2 class="slider__title ">3Tytuł</h2>
+          <h2 class="slider__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facere natus
+            veritatis
+            libero quos nemo a? Laborum sunt, voluptate tempore, eius veritatis corporis numquam eveniet mollitia
+            commodi
+            excepturi quam error!</h2>
+        </article>
 
-      <button class="slider__btn slider__btn-prev">&#10094;</button>
-      <button class="slider__btn slider__btn-next">&#10095;</button>
+        <button class="slider__btn slider__btn-prev">&#10094;</button>
+        <button class="slider__btn slider__btn-next">&#10095;</button>
 
-      <div class="slider__dots">
-        <span class="slider__dot active" onclick="changeSlider(0)"></span>
-        <span class="slider__dot" onclick="changeSlider(1)"></span>
-        <span class="slider__dot" onclick="changeSlider(2)"></span>
+        <div class="slider__dots">
+          <span class="slider__dot active" onclick="changeSlider(0)"></span>
+          <span class="slider__dot" onclick="changeSlider(1)"></span>
+          <span class="slider__dot" onclick="changeSlider(2)"></span>
+        </div>
       </div>
 
     </header>
     <article class="services">
 
       <div class="services__section">
-        <img src="/images/service01.png" alt="" class="services__img">
+        <!-- <img src="/images/service01.png" alt="" class="services__img"> -->
+        <i class="fas fa-cogs"></i>
         <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed a saepe magnam expedita
           dolorem suscipit amet
           debitis, repellat ducimus, qui sint possimus dolor laboriosam inventore aperiam voluptatibus quae sapiente
@@ -69,7 +79,8 @@
       </div>
 
       <div class="services__section">
-        <img src="/images/service11.png" alt="" class="services__img">
+        <!-- <img src="/images/service11.png" alt="" class="services__img"> -->
+        <i class="fas fa-wrench"></i>
         <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed a saepe magnam expedita
           dolorem suscipit amet
           debitis, repellat ducimus, qui sint possimus dolor laboriosam inventore aperiam voluptatibus quae sapiente
@@ -77,7 +88,8 @@
       </div>
 
       <div class="services__section">
-        <img src="/images/service22.png" alt="" class="services__img">
+        <!-- <img src="/images/service22.png" alt="" class="services__img"> -->
+        <i class="fas fa-car-battery"></i>
         <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed a saepe magnam expedita
           dolorem suscipit amet
           debitis, repellat ducimus, qui sint possimus dolor laboriosam inventore aperiam voluptatibus quae sapiente
