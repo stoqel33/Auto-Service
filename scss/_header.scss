@@ -24,21 +24,21 @@
     }
     
     &-first{
-      background-position-y: 70%;
-      background-image: url(/images/key1.jpg);
+      background-image: url(../images/image3.jpg);
       & .slider__title{
         top: 20%;
         left: 10%;
       }
-
+      
       & .slider__text{
         top: 28%;
         left: 10%;
       }
     }
-
+    
     &-second{
-      background-image: url(/images/image3.jpg);
+      background-position-y: 100%;
+      background-image: url(../images/key1.jpg);
 
       & .slider__title{
         top: 20%;
@@ -53,7 +53,7 @@
 
     &-third{
       background-position-y: 90%;
-      background-image: url(/images/image4.jpg);
+      background-image: url(../images/image4.jpg);
 
       & .slider__title{
         top: 20%;
