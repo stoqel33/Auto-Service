@@ -10,7 +10,9 @@
 
 .grid {
   color: #eeeeee;
-  background-image: url(/images/bg1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(19, 12, 12, 0.97))), url("../images/bg1.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 12, 12, 0.97)), url("../images/bg1.jpg");
+  background-repeat: repeat-y;
   background-size: cover;
   cursor: default;
   min-height: 100vh;
@@ -52,26 +54,34 @@
   -ms-grid-column: 3;
   grid-area: phone;
   position: relative;
-  height: 100%;
-  width: 100%;
 }
 
 .phone__title {
-  position: relative;
-  top: 50%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   right: 20%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .phone__title i {
   color: #00adb5;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .phone__number {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-decoration: none;
   color: #fce38a;
+}
+
+.phone__number-icon {
+  padding-left: 2.5rem;
 }
 
 .slider {
@@ -106,8 +116,7 @@
 }
 
 .slider__article-first {
-  background-position-y: 70%;
-  background-image: url(/images/key1.jpg);
+  background-image: url(../images/image3.jpg);
 }
 
 .slider__article-first .slider__title {
@@ -121,7 +130,8 @@
 }
 
 .slider__article-second {
-  background-image: url(/images/image3.jpg);
+  background-position-y: 100%;
+  background-image: url(../images/key1.jpg);
 }
 
 .slider__article-second .slider__title {
@@ -136,7 +146,7 @@
 
 .slider__article-third {
   background-position-y: 90%;
-  background-image: url(/images/image4.jpg);
+  background-image: url(../images/image4.jpg);
 }
 
 .slider__article-third .slider__title {
@@ -294,7 +304,6 @@
 }
 
 .info div {
-  height: 100%;
   width: 100%;
 }
 
@@ -306,6 +315,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.info__contact-description, .info__contact-title {
+  margin-top: .3rem;
 }
 
 .info__contact-section {
@@ -334,6 +347,27 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.info__list {
+  margin-left: 1rem;
+}
+
+.info__list li {
+  list-style: none;
+}
+
+.info__list li + li {
+  margin-top: .5rem;
+}
+
+.info__list li:before {
+  content: '\f7d9';
+  color: #00adb5;
+  font-size: 1rem;
+  font-family: FontAwesome;
+  display: inline-block;
+  padding-right: .5rem;
 }
 
 .footer {

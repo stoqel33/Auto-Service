@@ -18,7 +18,6 @@
   }
 
   & div{
-    height: 100%;
     width: 100%;
   }
 
@@ -28,6 +27,10 @@
 
   &__contact{
     display: flex;
+
+    &-description, &-title{
+      margin-top: .3rem;
+    }
     
     &-section{
       width: 100%;
@@ -46,6 +49,27 @@
         width: 30%;
         align-items: flex-end;
       }
+    }
+  }
+
+  &__list{
+    margin-left: 1rem;
+
+    li{
+      list-style: none;
+    }
+
+    li+li{
+      margin-top: .5rem;
+    }
+
+    li:before{
+      content: '\f7d9';
+      color: $title-color;
+      font-size: 1rem;
+      font-family: FontAwesome;
+      display: inline-block;
+      padding-right: .5rem;
     }
   }
 }
